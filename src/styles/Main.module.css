@@ -14,6 +14,7 @@
 .mainPage p{
     font-size: 5rem;
     margin: 0;
+    text-align: center;
 }
 .mainPage p:hover{
     /* iv. 마우스 포인터 진입 시 폰트 색상 #555로 변경, 포인터는 손가락으로 변경. */
