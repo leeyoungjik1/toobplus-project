@@ -1,0 +1,141 @@
+/* 모바일, 태블릿 버전 CSS */
+nav{
+    /* b. white 기반 투명도 50%의 배경색, 포인트 컬러는 자유. */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .5);
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.menusContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+.iconMenu{
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icon_menu.png);
+    background-color: salmon;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 2;
+}
+nav li{
+    margin: 0;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav>div>ul{
+    display: none;
+    height: calc(100vh - 60px);
+    background-color: salmon;
+    position: absolute;
+    padding-top: 60px;
+    transition: .3s;
+    z-index: 1;
+}
+.menus>li{
+    text-align: right;
+}
+.menus>li>a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 100px;
+}
+.menus>li>ul a{
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: black;
+    border: 1px solid gray;
+}
+nav>div>ul>li>ul{
+    display: none;
+}
+.backgroundBlack{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    transition: .3s;
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/* PC 버전 CSS */
+.pcNav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .5);
+    align-items: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.pcNav a{
+    /* width: 100px; */
+    height: 80px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.pcMenus{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    padding-top: 0px;
+    transition: .3s;
+    right: 0px;
+    z-index: 1;
+}
+.pcMenus>li{
+    display: flex;
+    flex-flow: column;
+}
+.pcMenus>li>a{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 0px;
+    padding: 1rem;
+}
+.pcSubMenus a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* iv.	메인메뉴명, 서브메뉴명 각각에 다른 방식의 hover 이펙트 개별 적용. */
+.pcSubMenus a:hover{
+    color: salmon;
+}

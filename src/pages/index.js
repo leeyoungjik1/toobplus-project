@@ -1,0 +1,6 @@
+export { default as Main} from './Main'
+export { default as Section1} from './Section1'
+export { default as Test1} from './Test1'
+export { default as Section3} from './Section3'
+export { default as FreeContent} from './Free-content'
+export { default as NotFound} from './NotFound'

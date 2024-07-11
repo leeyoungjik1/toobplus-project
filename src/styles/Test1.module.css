@@ -1,0 +1,12 @@
+.test1Page{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.test1Page img{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

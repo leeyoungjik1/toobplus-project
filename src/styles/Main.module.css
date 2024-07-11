@@ -1,0 +1,22 @@
+.mainPage{
+    /* i. 디바이스 높이를 가득 채우는 1개 섹션 제작 (배경색 : #fff). */
+    /* iii.	텍스트는 화면 상 정 중앙에 위치. */
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainPage p{
+    font-size: 5rem;
+    margin: 0;
+}
+.mainPage p:hover{
+    /* iv. 마우스 포인터 진입 시 폰트 색상 #555로 변경, 포인터는 손가락으로 변경. */
+    color: #555;
+    cursor: pointer;
+}
