@@ -55,6 +55,7 @@ function App() {
         <Route exact path='/test1' element={<Test1 device={device}/>}/>
         {/* l. section3 */}
         <Route exact path='/section3' element={<Section3 device={device}/>}/>
+        {/* m. free-content */}
         <Route exact path='/freeContent' element={<FreeContent device={device}/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
